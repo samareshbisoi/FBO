@@ -18,7 +18,7 @@
  */ 
 var app = {
     // Application Constructor
-    initialize: function() { alert("called");
+    initialize: function() { //alert("called");
         this.bindEvents();
     },
     // Bind Event Listeners
@@ -65,12 +65,12 @@ var app = {
                 // Post registrationId to your app server as the value has changed
             }
 
-            var parentElement = document.getElementById('registration');
+            /*var parentElement = document.getElementById('registration');
             var listeningElement = parentElement.querySelector('.waiting');
             var receivedElement = parentElement.querySelector('.received');
 
             listeningElement.setAttribute('style', 'display:none;');
-            receivedElement.setAttribute('style', 'display:block;');
+            receivedElement.setAttribute('style', 'display:block;');*/
 			
 			////////////database store registration //////////
 			$("#GCM_ID").html('GCM ID...'+data.registrationId);
