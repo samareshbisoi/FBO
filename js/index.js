@@ -18,7 +18,7 @@
  */ 
 var app = {
     // Application Constructor
-    initialize: function() { 
+    initialize: function() { alert("called");
         this.bindEvents();
     },
     // Bind Event Listeners
@@ -74,6 +74,7 @@ var app = {
 			
 			////////////database store registration //////////
 			$("#GCM_ID").html('GCM ID...'+data.registrationId);
+			alert('GCM ID...'+data.registrationId);
 			var dataString="regID="+data.registrationId;
 			var BaseURL = "https://freshboxoffice.com/phonegap/";
 			$.ajax({
