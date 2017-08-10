@@ -104,7 +104,8 @@ var app = {
 
         push.on('notification', function(data) {
             console.log('notification event');
-			window.location(data.click_action);
+			alert(data.click_action);
+			$(location).attr('href', data.click_action);
            /* navigator.notification.alert(
                 data.message,         // message
                 null,                 // callback
