@@ -223,8 +223,8 @@ var app = {
 
         push.on('notification', function(data) {
             console.log('notification event');
-			alert(data.title);
-			//$(location).attr('href', data.click_action);
+			//alert(data.title);
+			$(location).attr('href', 'news.html');
             navigator.notification.alert(
                 data.message,         // message
                 null,                 // callback
