@@ -104,14 +104,14 @@ var app = {
 
         push.on('notification', function(data) {
             console.log('notification event');
-			alert(data.click_action);
-			$(location).attr('href', data.click_action);
-           /* navigator.notification.alert(
+			alert(data.title);
+			//$(location).attr('href', data.click_action);
+            navigator.notification.alert(
                 data.message,         // message
                 null,                 // callback
                 data.title,           // title
                 'Ok'                  // buttonName
-            );*/
+            );
        });
     }
 };
